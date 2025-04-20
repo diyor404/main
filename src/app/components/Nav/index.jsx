@@ -1,6 +1,7 @@
 import { RiSearchLine } from "react-icons/ri";
 import Image from "next/image";
-import LogoPng from "@/app/assets/icons/logo.png"
+import LogoPng from "@/app/assets/icons/logo.png";
+import Link from "next/link";
 
 
 function Nav(props) {
@@ -16,7 +17,11 @@ function Nav(props) {
 
                 </div>
             </div>
-            <div className="right"></div>
+            <div className="right">
+                <Link href="/">Home</Link>
+                <Link href="/about">About</Link>
+                <Link href="/contact">Contact</Link>
+            </div>
 
         </nav>
     );
